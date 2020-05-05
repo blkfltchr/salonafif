@@ -17,10 +17,10 @@ try {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Freelance Starter',
+    title: 'Salon Afif',
     description:
-      'A template to quickly and easily bootstrap freelance projects with Gatsby, Contentful and Netlify.',
-    siteUrl: 'https://gatsbyfreelancestarter.netlify.app',
+      'One of the longest standing successful Salons in Toronto.',
+    siteUrl: 'https://salonafif.heroku.com',
     image: '/images/share.jpg',
     menuLinks: [
       {
@@ -84,8 +84,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gatsby Freelance Starter',
-        short_name: 'gatsby-freelance-starter',
+        name: 'Salon Afif',
+        short_name: 'salonafif',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
