@@ -93,18 +93,15 @@ const SliderSection = styled.div`
     display:  block;
   }
   .site-Banner .Banner-details a {
-    background: ${props => props.theme.colors.primary};
-    color: #fff;
+    background: ${props => props.theme.colors.accent};
+    color: #000;
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 3px;
     display: inline-block;
-    letter-spacing: 1px;
     text-decoration: none;
     transition: 0.2s;
-    &:hover {
-      background: ${props => props.theme.colors.highlight};
-    }
+    font-weight: 600;
   }
 `
 

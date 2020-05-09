@@ -52,6 +52,13 @@ const Form = styled.form`
     opacity: ${props => (props.overlay ? '.8' : '0')};
     visibility: ${props => (props.overlay ? 'visible' : 'hidden')};
   }
+  p {
+    line-height: 1.2;
+    margin: 0 0 2em 0;
+    span {
+      font-weight: 700;
+    }
+  }
 `
 
 const Name = styled.input`
@@ -79,13 +86,10 @@ const Message = styled.textarea`
 `
 
 const Submit = styled.input`
-  background: ${props => props.theme.colors.primary} !important;
-  color: white !important;
+  background: ${props => props.theme.colors.accent} !important;
+  color: black !important;
   cursor: pointer;
   transition: 0.2s;
-  &:hover {
-    background: ${props => props.theme.colors.highlight} !important;
-  }
 `
 
 const Modal = styled.div`
@@ -197,6 +201,25 @@ class ContactForm extends React.Component {
         overlay={this.state.showModal}
         onClick={this.closeModal}
       >
+        <p>
+          Located on the east side of Yonge street in between Keewtan and Erskin, Salon Afif is steps away from the Yonge and Eglinton subway station. Easy to find by car or foot, make sure to book an appointment today.
+        </p>
+        <p>
+          At Salon Afif we give all our new customers a free consultation to discuss their hair look wishes and our recommendations to ensure a positive experience from the first try.
+        </p>
+        <p>
+          <span>HOURS</span><br />
+          Monday: 10am-7pm<br />
+          Tuesday: 9am-8pm<br />
+          Wednesday: 9am-8pm<br />
+          Thursday: 9am-8pm<br />
+          Friday: 9am-8pm<br />
+          Saturday: 9am-6pm<br />
+          Sunday: Closed
+        </p>
+        <p>
+          To make an appointment, please call us at <a href="tel:416-962-8888">416.962.8888</a>, email us at <a href="mailto:salonafif@hotmail.com">salonafif@hotmail.com</a> or fill out the form below.
+        </p>
         <input type="hidden" name="form-name" value="contact" />
         <p hidden>
           <label>

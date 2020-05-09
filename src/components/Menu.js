@@ -31,6 +31,24 @@ const Nav = styled.nav`
         width: 100px;
       }
     }
+    &:last-of-type {
+      background-color: ${props => props.theme.colors.accent};
+      min-width: 120px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      a {
+        color: ${props => props.theme.colors.primary};
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
+    &:not(:first-of-type) {
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   a {
@@ -55,7 +73,6 @@ const activeLinkStyle = {
 
 const Menu = () => {
   const { menuLinks, logo } = useSiteMetadata()
-  console.log(logo)
   return (
     <Header>
       <Nav>
@@ -72,6 +89,15 @@ const Menu = () => {
               </Link>
             </li>
           ))}
+          <li>
+            <a
+              href="https://resurva.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book online
+            </a>
+          </li>
         </ul>
       </Nav>
     </Header>

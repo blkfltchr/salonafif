@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Container from '../components/Container'
+import FullContainer from '../components/FullContainer'
 import Banner from '../components/Banner'
 import SEO from '../components/SEO'
 
@@ -9,9 +9,9 @@ const Index = data => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Container>
+      <FullContainer>
         <Banner bannerData={data.data.allContentfulHeaderBanner.edges} />
-      </Container>
+      </FullContainer>
     </Layout>
   )
 }

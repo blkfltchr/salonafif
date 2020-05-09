@@ -20,7 +20,7 @@ module.exports = {
     title: 'Salon Afif',
     description:
       'One of the longest standing successful Salons in Toronto.',
-    siteUrl: 'https://salonafif.heroku.com',
+    siteUrl: 'https://salonafif.herokuapp.com',
     image: '/images/share.jpg',
     menuLinks: [
       {
@@ -41,6 +41,7 @@ module.exports = {
       },
     ],
     logo: '/images/logo.jpg',
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
   },
   plugins: [
     `gatsby-plugin-emotion`,
