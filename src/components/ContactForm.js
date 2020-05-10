@@ -53,7 +53,7 @@ const Form = styled.form`
     visibility: ${props => (props.overlay ? 'visible' : 'hidden')};
   }
   p {
-    line-height: 1.2;
+    line-height: 1.25;
     margin: 0 0 2em 0;
     span {
       font-weight: 700;

@@ -4,66 +4,67 @@ import { push as MobileNav } from 'react-burger-menu'
 import styled from '@emotion/styled'
 import { Global } from '@emotion/core'
 import Menu from '../components/Menu'
+import Footer from '../components/Footer'
 import { globalStyles } from '../styles/globalStyles.js'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Root = styled.div`
   font-family: ${props => props.theme.fonts.body};
 
-.bm-menu-wrap,
-.bm-overlay,
-.bm-burger-button {
-  @media only screen and (min-width: 769px) {
-    display: none;
-  }
-}
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 30px;
-}
-.bm-burger-bars {
-  background: DarkGray;
-}
-.bm-burger-bars-hover {
-  background: ${props => props.theme.colors.primary};
-}
-.bm-cross-button {
-  height: 36px;
-  width: 36px;
-}
-.bm-cross {
-  background: ${props => props.theme.colors.primary};
-}
-.bm-item {
-  text-decoration: none;
-  color: DarkGray;
-  font-weight: 600;
-  transition: all 0.2s;
-  margin-top: 30px;
-  text-align: center;
-  &:hover {
-    color: black;
-  }
-  &:last-of-type {
-    background-color: ${props => props.theme.colors.accent};
-    max-width: 120px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    color: ${props => props.theme.colors.primary};
-    &:hover {
-      border-bottom: none;
+  .bm-menu-wrap,
+  .bm-overlay,
+  .bm-burger-button {
+    @media only screen and (min-width: 769px) {
+      display: none;
     }
   }
-}
-.bm-overlay {
-  background: ${props => props.theme.colors.background} !important;
-  z-index: 1001 !important;
-}
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 30px;
+  }
+  .bm-burger-bars {
+    background: DarkGray;
+  }
+  .bm-burger-bars-hover {
+    background: ${props => props.theme.colors.primary};
+  }
+  .bm-cross-button {
+    height: 36px;
+    width: 36px;
+  }
+  .bm-cross {
+    background: ${props => props.theme.colors.primary};
+  }
+  .bm-item {
+    text-decoration: none;
+    color: DarkGray;
+    font-weight: 600;
+    transition: all 0.2s;
+    margin-top: 30px;
+    text-align: center;
+    &:hover {
+      color: black;
+    }
+    &:last-of-type {
+      background-color: ${props => props.theme.colors.accent};
+      max-width: 120px;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      color: ${props => props.theme.colors.primary};
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+  .bm-overlay {
+    background: ${props => props.theme.colors.background} !important;
+    z-index: 1001 !important;
+  }
 `
 
 const Skip = styled.a`
@@ -107,7 +108,7 @@ const Layout = props => {
             </Link>
           ))}
           <a
-            href="https://resurva.com/"
+            href="https://salonafif.resurva.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -119,6 +120,7 @@ const Layout = props => {
         </Skip>
         <Menu />
         <div id="main">{props.children}</div>
+        <Footer />
       </div>
       <Global styles={globalStyles} />
     </Root>
