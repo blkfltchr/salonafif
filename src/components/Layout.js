@@ -18,12 +18,15 @@ const Root = styled.div`
       display: none;
     }
   }
+  .bm-menu-wrap {
+    width: 100% !important;
+  }
   .bm-burger-button {
-    position: fixed;
+    position: absolute;
     width: 36px;
     height: 30px;
     right: 36px;
-    top: 30px;
+    top: 70px;
   }
   .bm-burger-bars {
     background: DarkGray;
@@ -118,9 +121,9 @@ const Layout = props => {
         <Skip href="#main" id="skip-navigation">
           Skip to content
         </Skip>
+        <Footer />
         <Menu />
         <div id="main">{props.children}</div>
-        <Footer />
       </div>
       <Global styles={globalStyles} />
     </Root>

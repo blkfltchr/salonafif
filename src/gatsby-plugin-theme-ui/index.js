@@ -12,7 +12,7 @@ export default {
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
   },
   sizes: {
-    maxWidth: '1050px',
+    maxWidth: '1440px',
     maxWidthCentered: '650px',
   },
   responsive: {

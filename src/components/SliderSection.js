@@ -4,6 +4,7 @@ const SliderSection = styled.div`
   .slick-slider .slick-list div {
     display: inline-block;
     width: 100%;
+    height: calc(100vh - 100px);;
   }
   .slick-slider .slick-arrow {
     display: none !important;
@@ -49,7 +50,6 @@ const SliderSection = styled.div`
   }
   .slick-list {
     overflow: hidden;
-    margin-bottom: 30px;
   }
   .site-Banner {
     width: 100%;
@@ -57,7 +57,7 @@ const SliderSection = styled.div`
   }
   .site-Banner .Banner-details {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
@@ -97,7 +97,7 @@ const SliderSection = styled.div`
     color: #000;
     text-decoration: none;
     padding: 12px 25px;
-    border-radius: 3px;
+    border-radius: 10px;
     display: inline-block;
     text-decoration: none;
     transition: 0.2s;

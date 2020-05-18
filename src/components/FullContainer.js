@@ -6,7 +6,6 @@ const Wrapper = styled.section`
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};
   flex-grow: 1;
-  min-height: calc(100vh - 200px);
 `
 
 const FullContainer = props => {

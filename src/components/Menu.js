@@ -6,7 +6,7 @@ import { useSiteMetadata } from '../hooks/use-site-metadata'
 const Header = styled.header`
   background: ${props => props.theme.colors.background};
   width: 100%;
-  padding: 1.5em 0;
+  padding: 0.75em 0;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 `
 const Nav = styled.nav`
@@ -34,8 +34,8 @@ const Nav = styled.nav`
     }
     &:last-of-type {
       background-color: ${props => props.theme.colors.accent};
-      min-width: 120px;
-      padding: 10px;
+      min-width: 140px;
+      padding: 12px 25px;
       text-align: center;
       border-radius: 10px;
       a {

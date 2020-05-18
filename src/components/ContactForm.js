@@ -15,7 +15,6 @@ const Form = styled.form`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  input,
   textarea {
     font-family: inherit;
     font-size: inherit;
@@ -59,6 +58,10 @@ const Form = styled.form`
       font-weight: 700;
     }
   }
+  a {
+    color: black;
+    font-weight: bold;
+  }
 `
 
 const Name = styled.input`
@@ -90,6 +93,9 @@ const Submit = styled.input`
   color: black !important;
   cursor: pointer;
   transition: 0.2s;
+  padding: 12px 25px;
+  text-align: center;
+  border-radius: 10px;
 `
 
 const Modal = styled.div`
@@ -120,7 +126,7 @@ const Modal = styled.div`
 `
 
 const Button = styled.div`
-  background: ${props => props.theme.colors.primary};
+  background: ${props => props.theme.colors.accent} !important;
   font-size: 1em;
   display: inline-block;
   margin: 0 auto;
@@ -135,9 +141,6 @@ const Button = styled.div`
   z-index: 99;
   &:focus {
     outline: none;
-  }
-  &:hover {
-    background: ${props => props.theme.colors.highlight};
   }
 `
 
