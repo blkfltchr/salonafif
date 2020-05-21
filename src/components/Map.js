@@ -11,6 +11,7 @@ const MapWrapper = styled.div`
     border-radius: 10px;
     font-size: 11px;
     p {
+      color: black !important;
       &:first-of-type {
         font-weight: 700;
       }

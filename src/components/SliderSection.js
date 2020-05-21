@@ -65,6 +65,7 @@ const SliderSection = styled.div`
     -ms-transform: translate(-50%,-50%);
     max-width: 90%;
     z-index: 1;
+    text-align: center;
   }
   .site-Banner .Banner-details h1 {
     color: #fff;

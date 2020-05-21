@@ -15,6 +15,7 @@ const Form = styled.form`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
+  input,
   textarea {
     font-family: inherit;
     font-size: inherit;
@@ -59,7 +60,7 @@ const Form = styled.form`
     }
   }
   a {
-    color: black;
+    color: white;
     font-weight: bold;
   }
 `
