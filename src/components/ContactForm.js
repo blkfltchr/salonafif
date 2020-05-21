@@ -63,6 +63,16 @@ const Form = styled.form`
     color: white;
     font-weight: bold;
   }
+  input {
+    &:last-of-type {
+      background-color: ${props => props.theme.colors.accent};
+      padding: 12px 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: white;
+    }
+  }
 `
 
 const Name = styled.input`

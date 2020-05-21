@@ -27,6 +27,9 @@ const Root = styled.div`
     height: 30px;
     right: 36px;
     top: 70px;
+    @media only screen and (min-width: 566px) {
+      top: 55px;
+    }
   }
   .bm-burger-bars {
     background: DarkGray;

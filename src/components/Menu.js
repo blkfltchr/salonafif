@@ -34,12 +34,12 @@ const Nav = styled.nav`
     }
     &:last-of-type {
       background-color: ${props => props.theme.colors.accent};
-      min-width: 140px;
+      min-width: 150px;
       padding: 12px 25px;
       text-align: center;
       border-radius: 10px;
       a {
-        color: ${props => props.theme.colors.primary};
+        color: white;
         &:hover {
           border-bottom: none;
         }

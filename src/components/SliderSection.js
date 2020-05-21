@@ -95,7 +95,7 @@ const SliderSection = styled.div`
   }
   .site-Banner .Banner-details a {
     background: ${props => props.theme.colors.accent};
-    color: #000;
+    color: #fff;
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 10px;

@@ -210,6 +210,7 @@ type ContentfulPage implements Node @derivedTypes @dontInfer {
   slug: String
   body: contentfulPageBodyTextNode @link(by: "id", from: "body___NODE")
   metaDescription: contentfulPageMetaDescriptionTextNode @link(by: "id", from: "metaDescription___NODE")
+  image: ContentfulAsset @link(by: "id", from: "image___NODE")
   spaceId: String
   contentful_id: String
   createdAt: Date @dateformat

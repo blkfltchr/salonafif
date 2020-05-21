@@ -2,12 +2,12 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Container from '../components/Container'
-import PageTitle from '../components/PageTitle'
+import PageBanner from '../components/PageBanner'
 import PageBody from '../components/PageBody'
 import SEO from '../components/SEO'
 
 const PageTemplate = ({ data }) => {
-  const { title, metaDescription, body } = data.contentfulPage
+  const { title, metaDescription, body, image } = data.contentfulPage
   return (
     <Layout>
       <SEO
@@ -18,8 +18,8 @@ const PageTemplate = ({ data }) => {
             : body.childMarkdownRemark.excerpt
         }
       />
+      <PageBanner banner={image} title={title} />
       <Container>
-        <PageTitle>{title}</PageTitle>
         <PageBody body={body} />
       </Container>
     </Layout>
@@ -40,6 +40,17 @@ export const query = graphql`
         childMarkdownRemark {
           html
           excerpt(pruneLength: 320)
+        }
+      }
+      image {
+        fluid(maxWidth: 1800) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
         }
       }
     }
