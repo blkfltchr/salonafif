@@ -98,11 +98,11 @@ const SliderSection = styled.div`
     color: #fff;
     text-decoration: none;
     padding: 12px 25px;
-    border-radius: 10px;
     display: inline-block;
     text-decoration: none;
     transition: 0.2s;
     font-weight: 600;
+    text-transform: uppercase;
   }
 `
 

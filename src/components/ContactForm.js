@@ -65,12 +65,13 @@ const Form = styled.form`
   }
   input {
     &:last-of-type {
-      background-color: ${props => props.theme.colors.accent};
+      background: ${props => props.theme.colors.accent};
       padding: 12px 25px;
-      border-radius: 10px;
       margin-bottom: 20px;
       font-weight: bold;
-      color: white;
+      color: white !important;
+      border-radius: none;
+      text-transform: uppercase;
     }
   }
 `
@@ -232,7 +233,7 @@ class ContactForm extends React.Component {
           Sunday: Closed
         </p>
         <p>
-          To make an appointment, please call us at <a href="tel:416-962-8888">416.962.8888</a>, email us at <a href="mailto:salonafif@hotmail.com">salonafif@hotmail.com</a> or fill out the form below.
+          To make an appointment, please call us at <a href="tel:416-488-2161">416-488-2161</a>, email us at <a href="mailto:salonafif@hotmail.com">salonafif@hotmail.com</a> or fill out the form below.
         </p>
         <input type="hidden" name="form-name" value="contact" />
         <p hidden>

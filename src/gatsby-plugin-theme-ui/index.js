@@ -9,7 +9,7 @@ export default {
   },
   fonts: {
     body:
-      'Roboto, Helvetica, Arial, sans-serif',
+      'Montserrat, Georgia, Times New Roman, serif',
   },
   sizes: {
     maxWidth: '1440px',

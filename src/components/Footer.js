@@ -26,7 +26,7 @@ const Menu = () => {
     <Footer>
       <Content>
         <p>
-          To make an appointment, please call us at <a href="tel:416-962-8888">416.962.8888</a> or <a href="https://salonafif.resurva.com/" target="_blank" rel="noopener noreferrer">book online</a>.
+          To make an appointment, please call us at <a href="tel:416-488-2161">416-488-2161</a> or <a href="https://salonafif.resurva.com/" target="_blank" rel="noopener noreferrer">book online</a>.
         </p>
       </Content>
     </Footer>

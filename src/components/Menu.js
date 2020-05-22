@@ -24,6 +24,8 @@ const Nav = styled.nav`
   li {
     display: inline-block;
     margin-left: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     &:first-of-type {
       position: relative;
       margin: 0;
@@ -32,14 +34,32 @@ const Nav = styled.nav`
         width: 100px;
       }
     }
+    :nth-of-type(3) {
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 120px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        z-index: 1;
+        text-align: center;
+        a {
+          margin: 10px;
+          color: black;
+        }
+      }
+    }
+    :nth-of-type(3):hover .dropdown-content {
+      display: flex;
+      flex-direction: column;
+    }
     &:last-of-type {
-      background-color: ${props => props.theme.colors.accent};
-      min-width: 150px;
-      padding: 12px 25px;
+      border: solid 3px ${props => props.theme.colors.accent};
+      min-width: 180px;
+      padding: 12px 15px;
       text-align: center;
-      border-radius: 10px;
       a {
-        color: white;
+        color: ${props => props.theme.colors.accent};
         &:hover {
           border-bottom: none;
         }
@@ -73,7 +93,7 @@ const activeLinkStyle = {
 }
 
 const Menu = () => {
-  const { menuLinks, logo } = useSiteMetadata()
+  const { logo } = useSiteMetadata()
   return (
     <Header>
       <Nav>
@@ -83,13 +103,32 @@ const Menu = () => {
               <img src={logo} alt="Salon Afif logo" />
             </Link>
           </li>
-          {menuLinks.map(link => (
-            <li key={link.name}>
-              <Link to={link.slug} activeStyle={activeLinkStyle}>
-                {link.name}
-              </Link>
-            </li>
-          ))}
+          <li>
+            <Link to="/about" activeStyle={activeLinkStyle}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/services" activeStyle={activeLinkStyle}>
+              Services
+            </Link>
+            <div className="dropdown-content">
+              <Link to="/services#artistic-team">Hair</Link>
+              <Link to="/services#skin-care">Skin Care</Link>
+              <Link to="/services#hands">Nails</Link>
+              <Link to="/services#waxing">Waxing</Link>
+            </div>
+          </li>
+          <li>
+            <Link to="/products" activeStyle={activeLinkStyle}>
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" activeStyle={activeLinkStyle}>
+              Contact
+            </Link>
+          </li>
           <li>
             <a
               href="https://salonafif.resurva.com/"
