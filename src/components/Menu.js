@@ -109,15 +109,21 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <Link to="/services" activeStyle={activeLinkStyle}>
-              Services
+            <Link to="/hair" activeStyle={activeLinkStyle}>
+              Hair
             </Link>
             <div className="dropdown-content">
-              <Link to="/services#artistic-team">Hair</Link>
-              <Link to="/services#skin-care">Skin Care</Link>
-              <Link to="/services#hands">Nails</Link>
-              <Link to="/services#waxing">Waxing</Link>
+              <Link to="/hair#cut">Cut</Link>
+              <Link to="/hair#colour">Colour</Link>
+              <Link to="/hair#technical">Technical</Link>
+              <Link to="/hair#treatments">Treatments</Link>
+              <Link to="/hair#styling">Styling</Link>
             </div>
+          </li>
+          <li>
+            <Link to="/aesthetics" activeStyle={activeLinkStyle}>
+              Aesthetics
+            </Link>
           </li>
           <li>
             <Link to="/products" activeStyle={activeLinkStyle}>

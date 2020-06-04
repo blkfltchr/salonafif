@@ -28,8 +28,12 @@ module.exports = {
         slug: '/about',
       },
       {
-        name: 'Services',
-        slug: '/services',
+        name: 'Hair',
+        slug: '/hair',
+      },
+      {
+        name: 'Aesthetics',
+        slug: '/aesthetics',
       },
       {
         name: 'Products',
@@ -103,5 +107,11 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify',
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `salon_afif`,
+      },
+    },
   ],
 }

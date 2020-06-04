@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import FullContainer from '../components/FullContainer'
 import Banner from '../components/Banner'
 import SEO from '../components/SEO'
+import Instagram from '../components/InstagramFeed'
 
 const Index = data => {
   return (
@@ -12,6 +13,7 @@ const Index = data => {
       <FullContainer>
         <Banner bannerData={data.data.allContentfulHeaderBanner.edges} />
       </FullContainer>
+      <Instagram />
     </Layout>
   )
 }
