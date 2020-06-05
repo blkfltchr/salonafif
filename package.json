@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
+    "@luchoster/react-ig": "0.0.16",
     "babel-plugin-styled-components": "^1.10.7",
     "chalk": "^3.0.0",
     "contentful-import": "^7.6.2",
@@ -27,7 +28,6 @@
     "gatsby-remark-images-contentful": "^2.3.2",
     "gatsby-remark-prismjs": "^3.3.31",
     "gatsby-source-contentful": "^2.3.11",
-    "gatsby-source-instagram": "^0.7.2",
     "gatsby-transformer-remark": "^2.6.50",
     "google-map-react": "^1.1.7",
     "inquirer": "^7.0.4",

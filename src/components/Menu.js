@@ -41,7 +41,7 @@ const Nav = styled.nav`
         background-color: #f1f1f1;
         min-width: 120px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        z-index: 1;
+        z-index: 1000;
         text-align: center;
         a {
           margin: 10px;
@@ -116,7 +116,7 @@ const Menu = () => {
               <Link to="/hair#cut">Cut</Link>
               <Link to="/hair#colour">Colour</Link>
               <Link to="/hair#technical">Technical</Link>
-              <Link to="/hair#treatments">Treatments</Link>
+              <Link to="/hair#hair--scalp-treatments">Treatments</Link>
               <Link to="/hair#styling">Styling</Link>
             </div>
           </li>
