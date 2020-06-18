@@ -5,6 +5,7 @@ import styled from '@emotion/styled'
 import { Global } from '@emotion/core'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
+import Bottom from '../components/Bottom'
 import { globalStyles } from '../styles/globalStyles.js'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
@@ -51,19 +52,21 @@ const Root = styled.div`
     transition: all 0.2s;
     margin-top: 30px;
     text-align: center;
+    text-transform: uppercase;
     &:hover {
       color: black;
     }
     &:last-of-type {
-      background-color: ${props => props.theme.colors.accent};
-      max-width: 120px;
-      padding: 10px;
-      border-radius: 10px;
-      margin-left: auto;
-      margin-right: auto;
-      color: ${props => props.theme.colors.primary};
-      &:hover {
-        border-bottom: none;
+      border: solid 3px ${props => props.theme.colors.accent};
+      max-width: 180px;
+      padding: 12px 15px;
+      text-align: center;
+      margin: 20px auto;
+      color: ${props => props.theme.colors.accent};
+      a {
+        &:hover {
+          border-bottom: none;
+        }
       }
     }
   }
@@ -114,11 +117,9 @@ const Layout = props => {
             </Link>
           ))}
           <a
-            href="https://salonafif.resurva.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="tel:416-488-2161"
           >
-            Book online
+            Call now
           </a>
         </MobileNav>
         <Skip href="#main" id="skip-navigation">
@@ -127,6 +128,7 @@ const Layout = props => {
         <Footer />
         <Menu />
         <div id="main">{props.children}</div>
+        <Bottom />
       </div>
       <Global styles={globalStyles} />
     </Root>

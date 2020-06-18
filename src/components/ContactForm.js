@@ -233,7 +233,7 @@ class ContactForm extends React.Component {
           Sunday: Closed
         </p>
         <p>
-          To make an appointment, please call us at <a href="tel:416-488-2161">416-488-2161</a>, email us at <a href="mailto:salonafif@hotmail.com">salonafif@hotmail.com</a> or fill out the form below.
+          To contact us, please call us at <a href="tel:416-488-2161">416-488-2161</a>, email us at <a href="mailto:salonafif@hotmail.com">salonafif@hotmail.com</a> or fill out the form below.
         </p>
         <input type="hidden" name="form-name" value="contact" />
         <p hidden>

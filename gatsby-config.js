@@ -107,11 +107,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify',
-    // {
-    //   resolve: `gatsby-source-instagram`,
-    //   options: {
-    //     username: `salon_afif`,
-    //   },
-    // },
   ],
 }

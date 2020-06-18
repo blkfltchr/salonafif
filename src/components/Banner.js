@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Slider from 'react-slick'
 import SliderSection from './SliderSection'
@@ -28,7 +27,7 @@ export default class Banner extends Component {
                   <div>
                     <h1>{items.node.title}</h1>
                     <span className="sub-title">{items.node.subHeading}</span>
-                    <Link to={items.node.buttonLink}>{items.node.buttonText}</Link>
+                    <a href="tel:416-488-2161">Book an appointment</a>
                   </div>
                 </div>
               </div>

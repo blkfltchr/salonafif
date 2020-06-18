@@ -18,6 +18,7 @@ const Content = styled.div`
   a {
     color: white;
     font-weight: bold;
+    margin-left: 5px;
   }
 `
 
@@ -25,8 +26,14 @@ const Menu = () => {
   return (
     <Footer>
       <Content>
-        <p>
-          To make an appointment, please call us at <a href="tel:416-488-2161">416-488-2161</a>.
+        <p>To see more of what we’ve been up to, follow us on
+          <a
+            href="https://instagram.com/salon_afif"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>.
         </p>
       </Content>
     </Footer>

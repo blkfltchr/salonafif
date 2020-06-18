@@ -72,7 +72,7 @@ const Nav = styled.nav`
     }
   }
 
-  a {
+  a, span {
     text-decoration: none;
     color: DarkGray;
     font-weight: 600;
@@ -109,21 +109,13 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <Link to="/hair" activeStyle={activeLinkStyle}>
-              Hair
-            </Link>
+            <span>
+              Services
+            </span>
             <div className="dropdown-content">
-              <Link to="/hair#cut">Cut</Link>
-              <Link to="/hair#colour">Colour</Link>
-              <Link to="/hair#technical">Technical</Link>
-              <Link to="/hair#hair--scalp-treatments">Treatments</Link>
-              <Link to="/hair#styling">Styling</Link>
+              <Link to="/hair">Hair</Link>
+              <Link to="/aesthetics">Aesthetics</Link>
             </div>
-          </li>
-          <li>
-            <Link to="/aesthetics" activeStyle={activeLinkStyle}>
-              Aesthetics
-            </Link>
           </li>
           <li>
             <Link to="/products" activeStyle={activeLinkStyle}>
@@ -137,11 +129,9 @@ const Menu = () => {
           </li>
           <li>
             <a
-              href="https://salonafif.resurva.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:416-488-2161"
             >
-              Book online
+              Call now
             </a>
           </li>
         </ul>
