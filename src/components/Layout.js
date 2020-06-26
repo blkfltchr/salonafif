@@ -5,7 +5,6 @@ import styled from '@emotion/styled'
 import { Global } from '@emotion/core'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
-import Bottom from '../components/Bottom'
 import { globalStyles } from '../styles/globalStyles.js'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
@@ -23,14 +22,11 @@ const Root = styled.div`
     width: 100% !important;
   }
   .bm-burger-button {
-    position: absolute;
+    position: fixed;
     width: 36px;
     height: 30px;
     right: 36px;
-    top: 70px;
-    @media only screen and (min-width: 566px) {
-      top: 55px;
-    }
+    top: 15px;
   }
   .bm-burger-bars {
     background: DarkGray;
@@ -125,10 +121,9 @@ const Layout = props => {
         <Skip href="#main" id="skip-navigation">
           Skip to content
         </Skip>
-        <Footer />
         <Menu />
-        <div id="main">{props.children}</div>
-        <Bottom />
+        <div id="main" style={{ marginTop: '70px' }}>{props.children}</div>
+        <Footer />
       </div>
       <Global styles={globalStyles} />
     </Root>

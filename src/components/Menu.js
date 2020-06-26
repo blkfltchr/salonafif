@@ -8,6 +8,8 @@ const Header = styled.header`
   width: 100%;
   padding: 0.75em 0;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: fixed;
+  z-index: 1;
 `
 const Nav = styled.nav`
   width: 100%;
@@ -35,6 +37,7 @@ const Nav = styled.nav`
       }
     }
     :nth-of-type(3) {
+      padding: 20px 0;
       .dropdown-content {
         display: none;
         position: absolute;
@@ -43,6 +46,7 @@ const Nav = styled.nav`
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         z-index: 1000;
         text-align: center;
+        margin: 10px 0 0 -25px;
         a {
           margin: 10px;
           color: black;
