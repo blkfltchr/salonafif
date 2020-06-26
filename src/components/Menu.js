@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
@@ -9,7 +9,7 @@ const Header = styled.header`
   padding: 0.75em 0;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   position: fixed;
-  z-index: 1;
+  z-index: 100;
 `
 const Nav = styled.nav`
   width: 100%;
@@ -98,6 +98,7 @@ const activeLinkStyle = {
 
 const Menu = () => {
   const { logo } = useSiteMetadata()
+  const [buttonText, setButtonText] = useState('Call now');
   return (
     <Header>
       <Nav>
@@ -133,9 +134,10 @@ const Menu = () => {
           </li>
           <li>
             <a
-              href="tel:416-488-2161"
+              onClick={() => setButtonText('416-488-2161')}
+              style={{ cursor: 'pointer' }}
             >
-              Call now
+              {buttonText}
             </a>
           </li>
         </ul>

@@ -24,12 +24,17 @@ const Content = styled.div`
     height: 25px;
     width: auto;
   }
-  @media only screen and (max-width: 768px) {
+  /* @media only screen and (max-width: 540px) {
     flex-direction: column;
-    p {
-      padding: 10px 0;
+    align-items: center;
+    p, img {
+      margin: 10px 0;
     }
-  }
+    .salon-afif-logo {
+      width: 100px;
+      height: auto;
+    }
+  } */
   a {
     color: white;
     font-weight: bold;
@@ -41,7 +46,7 @@ const Menu = () => {
   return (
     <Footer>
       <Content>
-        <img src={logo} alt="Salon Afif logo" />
+        <img src={logo} alt="Salon Afif logo" className="salon-afif-logo" />
         <a
             href="https://instagram.com/salon_afif"
             target="_blank"

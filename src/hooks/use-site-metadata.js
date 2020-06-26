@@ -15,7 +15,7 @@ export const useSiteMetadata = () => {
               slug
             }
             logo
-            # googleMapsApiKey
+            googleMapsApiKey
           }
         }
       }

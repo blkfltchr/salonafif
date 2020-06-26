@@ -18,12 +18,13 @@ export default class Banner extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      buttonText: 'Book an appointment'
+      buttonText: true
     }
   }
-  showPhoneNumber = () => this.setState({ buttonText: 'Call 416-488-2161' })
+  showPhoneNumber = () => this.setState(prevState => ({ buttonText: !prevState.buttonText }))
   render() {
     const { bannerData } = this.props
+    const buttonText = this.state.buttonText ? 'Book an appointment' : 'Call 416-488-2161'
     return (
       <SliderSection>
         <Slider {...settings}>
@@ -34,8 +35,8 @@ export default class Banner extends Component {
                 <div className="Banner-details">
                   <div>
                     <img src={logo} alt="Salon Afif logo" style={{ height: '100px', width: 'auto', margin: '0 auto 20px auto' }} />
-                    <a href="tel:416-488-2161" className="mobile-button">{this.state.buttonText}</a>
-                    <a onClick={this.showPhoneNumber} className="desktop-button">{this.state.buttonText}</a>
+                    <a href="tel:416-488-2161" className="mobile-button">Book an appointment</a>
+                    <a onClick={this.showPhoneNumber} className="desktop-button">{buttonText}</a>
                   </div>
                 </div>
               </div>

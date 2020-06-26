@@ -4,7 +4,7 @@ import Container from '../components/Container'
 import PageTitle from '../components/PageTitle'
 import ContactForm from '../components/ContactForm'
 import SEO from '../components/SEO'
-// import Map from '../components/Map'
+import Map from '../components/Map'
 
 
 const Contact = () => {
@@ -12,7 +12,7 @@ const Contact = () => {
     <Layout>
       <SEO title="Contact" />
       <Container>
-        {/* <Map /> */}
+        <Map />
         <PageTitle>Contact</PageTitle>
         <ContactForm />
       </Container>
