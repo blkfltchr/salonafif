@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import Slider from 'react-slick'
 import SliderSection from './SliderSection'
+import logo from '../../static/images/logo-nobg.png';
 
 var settings = {
   dots: true,
@@ -14,8 +15,15 @@ var settings = {
 };
 
 export default class Banner extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      buttonText: 'Book an appointment'
+    }
+  }
+  showPhoneNumber = () => this.setState({ buttonText: 'Call 416-488-2161' })
   render() {
-    const { bannerData } = this.props;
+    const { bannerData } = this.props
     return (
       <SliderSection>
         <Slider {...settings}>
@@ -25,9 +33,9 @@ export default class Banner extends Component {
                 <Img sizes={items.node.image.fluid} />
                 <div className="Banner-details">
                   <div>
-                    <h1>{items.node.title}</h1>
-                    <span className="sub-title">{items.node.subHeading}</span>
-                    <a href="tel:416-488-2161">Book an appointment</a>
+                    <img src={logo} alt="Salon Afif logo" style={{ height: '100px', width: 'auto', margin: '0 auto 20px auto' }} />
+                    <a href="tel:416-488-2161" className="mobile-button">{this.state.buttonText}</a>
+                    <a onClick={this.showPhoneNumber} className="desktop-button">{this.state.buttonText}</a>
                   </div>
                 </div>
               </div>

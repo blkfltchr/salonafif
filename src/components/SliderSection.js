@@ -1,10 +1,11 @@
 import styled from '@emotion/styled'
 
 const SliderSection = styled.div`
+  background-image: linear-gradient(rgba(255,255,255,0.33),rgba(255,255,255,0.33));
   .slick-slider .slick-list div {
     display: inline-block;
     width: 100%;
-    height: calc(100vh - 100px);;
+    height: calc(100vh - 100px);
   }
   .slick-slider .slick-arrow {
     display: none !important;
@@ -86,6 +87,7 @@ const SliderSection = styled.div`
     width: 100%;
     z-index: 1;
     height: calc(100% - 1px);
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
   }
   .site-Banner .Banner-details .sub-title {
     color: #fff;
@@ -103,6 +105,18 @@ const SliderSection = styled.div`
     transition: 0.2s;
     font-weight: 600;
     text-transform: uppercase;
+  }
+  .mobile-button {
+    cursor: pointer;
+    @media screen and (min-width: 541px) {
+       display: none !important;
+    }
+  }
+  .desktop-button {
+    cursor: pointer;
+    @media screen and (max-width: 540px) {
+       display: none !important;
+    }
   }
 `
 

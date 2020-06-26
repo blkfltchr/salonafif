@@ -33,6 +33,7 @@ const Content = styled.div`
   a {
     color: white;
     font-weight: bold;
+    text-decoration: none;
   }
 `
 
@@ -48,7 +49,9 @@ const Menu = () => {
           >
           <img src={instagramLogo} alt="Instagram logo" />
         </a>
-        <p>Salon Afif 2020</p>
+        <p>
+          <a href="tel:416-488-2161">416-488-2161</a>
+        </p>
       </Content>
     </Footer>
   )
