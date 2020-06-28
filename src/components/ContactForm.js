@@ -12,7 +12,7 @@ const Form = styled.form`
   max-width: ${props => props.theme.sizes.maxWidthCentered};
   margin: 0 auto;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: space-between;
   align-items: flex-start;
   input,
@@ -76,148 +76,148 @@ const Form = styled.form`
   }
 `
 
-const Name = styled.input`
-  margin: 0 0 1em 0;
-  width: 100%;
-  @media (min-width: ${props => props.theme.responsive.small}) {
-    width: 49%;
-  }
-`
+// const Name = styled.input`
+//   margin: 0 0 1em 0;
+//   width: 100%;
+//   @media (min-width: ${props => props.theme.responsive.small}) {
+//     width: 49%;
+//   }
+// `
 
-const Email = styled.input`
-  margin: 0 0 1em 0;
-  width: 100%;
-  @media (min-width: ${props => props.theme.responsive.small}) {
-    width: 49%;
-  }
-`
+// const Email = styled.input`
+//   margin: 0 0 1em 0;
+//   width: 100%;
+//   @media (min-width: ${props => props.theme.responsive.small}) {
+//     width: 49%;
+//   }
+// `
 
-const Message = styled.textarea`
-  width: 100%;
-  margin: 0 0 1em 0;
-  line-height: 1.6;
-  min-height: 250px;
-  resize: vertical;
-`
+// const Message = styled.textarea`
+//   width: 100%;
+//   margin: 0 0 1em 0;
+//   line-height: 1.6;
+//   min-height: 250px;
+//   resize: vertical;
+// `
 
-const Submit = styled.input`
-  background: ${props => props.theme.colors.accent} !important;
-  color: black !important;
-  cursor: pointer;
-  transition: 0.2s;
-  padding: 12px 25px;
-  text-align: center;
-  border-radius: 10px;
-`
+// const Submit = styled.input`
+//   background: ${props => props.theme.colors.accent} !important;
+//   color: black !important;
+//   cursor: pointer;
+//   transition: 0.2s;
+//   padding: 12px 25px;
+//   text-align: center;
+//   border-radius: 10px;
+// `
 
-const Modal = styled.div`
-  background: white;
-  padding: 2em;
-  border-radius: 2px;
-  position: fixed;
-  min-width: 75%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  z-index: 99;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  transition: 0.2s all;
-  opacity: ${props => (props.visible ? '1' : '0')};
-  visibility: ${props => (props.visible ? 'visible' : 'hidden')};
-  @media screen and (min-width: ${props => props.theme.responsive.small}) {
-    min-width: inherit;
-    max-width: 400px;
-  }
-  p {
-    line-height: 1.6;
-    margin: 0 0 2em 0;
-  }
-`
+// const Modal = styled.div`
+//   background: white;
+//   padding: 2em;
+//   border-radius: 2px;
+//   position: fixed;
+//   min-width: 75%;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   margin: 0 auto;
+//   z-index: 99;
+//   display: flex;
+//   flex-flow: column;
+//   align-items: flex-start;
+//   transition: 0.2s all;
+//   opacity: ${props => (props.visible ? '1' : '0')};
+//   visibility: ${props => (props.visible ? 'visible' : 'hidden')};
+//   @media screen and (min-width: ${props => props.theme.responsive.small}) {
+//     min-width: inherit;
+//     max-width: 400px;
+//   }
+//   p {
+//     line-height: 1.6;
+//     margin: 0 0 2em 0;
+//   }
+// `
 
-const Button = styled.div`
-  background: ${props => props.theme.colors.accent} !important;
-  font-size: 1em;
-  display: inline-block;
-  margin: 0 auto;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: white;
-  padding: 1em;
-  border-radius: 2px;
-  text-decoration: none;
-  transition: 0.2s;
-  z-index: 99;
-  &:focus {
-    outline: none;
-  }
-`
+// const Button = styled.div`
+//   background: ${props => props.theme.colors.accent} !important;
+//   font-size: 1em;
+//   display: inline-block;
+//   margin: 0 auto;
+//   border: none;
+//   outline: none;
+//   cursor: pointer;
+//   color: white;
+//   padding: 1em;
+//   border-radius: 2px;
+//   text-decoration: none;
+//   transition: 0.2s;
+//   z-index: 99;
+//   &:focus {
+//     outline: none;
+//   }
+// `
 
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
+// const encode = data => {
+//   return Object.keys(data)
+//     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+//     .join('&')
+// }
 
 class ContactForm extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      name: '',
-      email: '',
-      message: '',
-      showModal: false,
-    }
-  }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     name: '',
+  //     email: '',
+  //     message: '',
+  //     showModal: false,
+  //   }
+  // }
 
-  handleInputChange = event => {
-    const target = event.target
-    const value = target.value
-    const name = target.name
-    this.setState({
-      [name]: value,
-    })
-  }
+  // handleInputChange = event => {
+  //   const target = event.target
+  //   const value = target.value
+  //   const name = target.name
+  //   this.setState({
+  //     [name]: value,
+  //   })
+  // }
 
-  handleSubmit = event => {
-    fetch('/?no-cache=1', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state }),
-    })
-      .then(this.handleSuccess)
-      .catch(error => alert(error))
-    event.preventDefault()
-  }
+  // handleSubmit = event => {
+  //   fetch('/?no-cache=1', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //     body: encode({ 'form-name': 'contact', ...this.state }),
+  //   })
+  //     .then(this.handleSuccess)
+  //     .catch(error => alert(error))
+  //   event.preventDefault()
+  // }
 
-  handleSuccess = () => {
-    this.setState({
-      name: '',
-      email: '',
-      message: '',
-      showModal: true,
-    })
-  }
+  // handleSuccess = () => {
+  //   this.setState({
+  //     name: '',
+  //     email: '',
+  //     message: '',
+  //     showModal: true,
+  //   })
+  // }
 
-  closeModal = () => {
-    this.setState({ showModal: false })
-  }
+  // closeModal = () => {
+  //   this.setState({ showModal: false })
+  // }
 
   render() {
     return (
       <Form
-        name="contact"
-        onSubmit={this.handleSubmit}
-        data-netlify="true"
-        data-netlify-honeypot="bot"
-        overlay={this.state.showModal}
-        onClick={this.closeModal}
+        // name="contact"
+        // onSubmit={this.handleSubmit}
+        // data-netlify="true"
+        // data-netlify-honeypot="bot"
+        // overlay={this.state.showModal}
+        // onClick={this.closeModal}
       >
         <p>
-          Located on the east side of Yonge street in between Keewtan and Erskin, Salon Afif is steps away from the Yonge and Eglinton subway station. Easy to find by car or foot, make sure to book an appointment today.
+          Located on the east side of Yonge street in between Keewatin and Erskine, Salon Afif is steps away from the Yonge and Eglinton subway station. Easy to find by car or foot, make sure to book an appointment today.
         </p>
         <p>
           At Salon Afif we give all our new customers a free consultation to discuss their hair look wishes and our recommendations to ensure a positive experience from the first try.
@@ -233,9 +233,9 @@ class ContactForm extends React.Component {
           Sunday: Closed
         </p>
         <p>
-          To contact us, please call us at <a href="tel:416-488-2161">416-488-2161</a>, email us at <a href="mailto:salonafif@hotmail.com">salonafif@hotmail.com</a> or fill out the form below.
+          To contact us, please call us at <a href="tel:416-488-2161">416-488-2161</a> or email us at <a href="mailto:salonafif@hotmail.com">salonafif@hotmail.com</a>.
         </p>
-        <input type="hidden" name="form-name" value="contact" />
+        {/* <input type="hidden" name="form-name" value="contact" />
         <p hidden>
           <label>
             Don’t fill this out:{' '}
@@ -275,7 +275,7 @@ class ContactForm extends React.Component {
             possible.
           </p>
           <Button onClick={this.closeModal}>Okay</Button>
-        </Modal>
+        </Modal> */}
       </Form>
     )
   }

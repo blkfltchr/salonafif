@@ -116,9 +116,9 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <span>
+            <Link to="/hair">
               Services
-            </span>
+            </Link>
             <div className="dropdown-content">
               <Link to="/hair">Hair</Link>
               <Link to="/aesthetics">Aesthetics</Link>
