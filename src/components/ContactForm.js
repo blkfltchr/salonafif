@@ -60,8 +60,8 @@ const Form = styled.form`
     }
   }
   a {
-    color: white;
-    font-weight: bold;
+    color: ${props => props.theme.colors.accent};
+    font-weight: 800;
   }
   input {
     &:last-of-type {

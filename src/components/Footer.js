@@ -5,9 +5,9 @@ import instagramLogo from '../../static/images/instagram-logo.png'
 
 const Footer = styled.div`
   width: 100%;
-  color: white;
+  color: DarkGray;
   text-align: center;
-  background: darkgray;
+  background: #fff;
   padding: 1em 0;
 `
 
@@ -20,23 +20,24 @@ const Content = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   img {
     height: 25px;
     width: auto;
   }
-  /* @media only screen and (max-width: 540px) {
+  @media only screen and (max-width: 540px) {
     flex-direction: column;
     align-items: center;
-    p, img {
+    div, img {
       margin: 10px 0;
     }
     .salon-afif-logo {
       width: 100px;
       height: auto;
     }
-  } */
+  }
   a {
-    color: white;
+    color: DarkGray;
     font-weight: bold;
     text-decoration: none;
   }
@@ -47,6 +48,16 @@ const Menu = () => {
     <Footer>
       <Content>
         <img src={logo} alt="Salon Afif logo" className="salon-afif-logo" />
+        <div>
+          <p>2485 Yonge St</p>
+          <p>Toronto, ON, M4P 2H6</p>
+          <p>
+            <a href="tel:416-488-2161">416-488-2161</a>
+          </p>
+          <p>
+            <a href="mail:salonafif@hotmail.com">salonafif@hotmail.com</a>
+          </p>
+        </div>
         <a
             href="https://instagram.com/salon_afif"
             target="_blank"
@@ -54,9 +65,6 @@ const Menu = () => {
           >
           <img src={instagramLogo} alt="Instagram logo" />
         </a>
-        <p>
-          <a href="tel:416-488-2161">416-488-2161</a>
-        </p>
       </Content>
     </Footer>
   )

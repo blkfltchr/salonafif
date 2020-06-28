@@ -5,11 +5,11 @@ export default {
     secondary: '#e9e9e9', // grey
     tertiary: '#f3f3f3', // grey
     highlight: '#5b8bf7', // blue
-    accent: '#E6B33E', // gold
+    accent: '#B68C2F', // gold
   },
   fonts: {
     body:
-      'Montserrat, Georgia, Times New Roman, serif',
+      'Playfair Display',
   },
   sizes: {
     maxWidth: '1440px',

@@ -9,7 +9,7 @@ import { globalStyles } from '../styles/globalStyles.js'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Root = styled.div`
-  font-family: ${props => props.theme.fonts.body};
+  font-family: 'Playfair Display';
 
   .bm-menu-wrap,
   .bm-overlay,

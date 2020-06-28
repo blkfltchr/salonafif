@@ -59,7 +59,7 @@ const Nav = styled.nav`
     }
     &:last-of-type {
       border: solid 3px ${props => props.theme.colors.accent};
-      min-width: 180px;
+      min-width: 160px;
       padding: 12px 15px;
       text-align: center;
       a {
@@ -81,6 +81,7 @@ const Nav = styled.nav`
     color: DarkGray;
     font-weight: 600;
     transition: all 0.2s;
+    font-weight: bold;
     &:hover {
       border-bottom: 2px solid ${props => props.theme.colors.primary};
       color: black;
@@ -98,7 +99,8 @@ const activeLinkStyle = {
 
 const Menu = () => {
   const { logo } = useSiteMetadata()
-  const [buttonText, setButtonText] = useState('Call now');
+  const [buttonText, setButtonText] = useState(true);
+  const text = buttonText ? 'Call now' : '416-488-2161';
   return (
     <Header>
       <Nav>
@@ -134,10 +136,10 @@ const Menu = () => {
           </li>
           <li>
             <a
-              onClick={() => setButtonText('416-488-2161')}
+              onClick={() => setButtonText(!buttonText)}
               style={{ cursor: 'pointer' }}
             >
-              {buttonText}
+              {text}
             </a>
           </li>
         </ul>
