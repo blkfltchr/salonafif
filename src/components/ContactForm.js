@@ -225,11 +225,11 @@ class ContactForm extends React.Component {
         <p>
           <span>HOURS</span><br />
           Monday: 10am-7pm<br />
-          Tuesday: 9am-8pm<br />
-          Wednesday: 9am-8pm<br />
-          Thursday: 9am-8pm<br />
-          Friday: 9am-8pm<br />
-          Saturday: 9am-6pm<br />
+          Tuesday: 9:30am-7pm<br />
+          Wednesday: 9:30am-7pm<br />
+          Thursday: 9:30am-7pm<br />
+          Friday: 9:30am-7pm<br />
+          Saturday: 9am-5pm<br />
           Sunday: Closed
         </p>
         <p>
