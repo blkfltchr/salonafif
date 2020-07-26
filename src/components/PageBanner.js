@@ -5,7 +5,6 @@ import SliderSection from './SliderSection'
 export default class Banner extends Component {
   render() {
     const { banner, title } = this.props;
-    console.log(this.props);
     return (
       <SliderSection>
             <div className="item">
