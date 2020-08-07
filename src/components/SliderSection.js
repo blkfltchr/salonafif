@@ -69,8 +69,13 @@ const SliderSection = styled.div`
     text-align: center;
   }
   .site-Banner .Banner-details h1 {
-    color: #fff;
-    font-size: 3em;
+    color: #000;
+    margin: 0 auto 1em auto;
+    font-size: 1.75em;
+    @media screen and (min-width: 768px) {
+      font-size: 2.5em;
+      max-width: 700px;
+    }
   }
   .slick-slider .slick-list div img {
     width: 100%;
@@ -87,7 +92,7 @@ const SliderSection = styled.div`
     width: 100%;
     z-index: 1;
     height: calc(100% - 1px);
-    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
+    background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3));
   }
   .site-Banner .Banner-details .sub-title {
     color: #fff;

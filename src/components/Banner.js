@@ -35,6 +35,7 @@ export default class Banner extends Component {
                 <div className="Banner-details">
                   <div>
                     <img src={logo} alt="Salon Afif logo" style={{ height: '100px', width: 'auto', margin: '0 auto 20px auto' }} />
+                    <h1>Celebrating our 50th year in business. Toronto's premium full service hair boutique since 1971.</h1>
                     <a href="tel:416-488-2161" className="mobile-button">Book an appointment</a>
                     <a onClick={this.showPhoneNumber} className="desktop-button">{buttonText}</a>
                   </div>

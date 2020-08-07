@@ -14,7 +14,7 @@ const Root = styled.div`
   .bm-menu-wrap,
   .bm-overlay,
   .bm-burger-button {
-    @media only screen and (min-width: 769px) {
+    @media only screen and (min-width: 801px) {
       display: none;
     }
   }

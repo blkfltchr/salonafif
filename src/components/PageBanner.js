@@ -11,7 +11,7 @@ export default class Banner extends Component {
               <div className="site-Banner">
                 <Img sizes={banner.fluid} style={{ height: '200px', opacity: '0.6' }} />
                 <div className="Banner-details">
-                  <h1 style={{ marginTop: '-100px' }}>{title}</h1>
+                  <h1 style={{ marginTop: '-100px', color: '#fff' }}>{title}</h1>
                 </div>
               </div>
             </div>
